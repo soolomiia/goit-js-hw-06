@@ -10,7 +10,9 @@ function getRandomHexColor() {
       .padStart(6, 0);
   console.log(newColor);
   body.style.background = newColor;
+  color.textContent = newColor;
   return newColor;
+
 }
 
 btnClick.addEventListener("click", () => getRandomHexColor());
